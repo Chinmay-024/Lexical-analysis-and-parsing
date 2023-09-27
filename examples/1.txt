@@ -1,0 +1,5 @@
+global 
+    fun hello -> null
+        a := 2
+    end
+end
