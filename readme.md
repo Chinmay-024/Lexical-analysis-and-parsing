@@ -29,18 +29,16 @@ To use the lexer and parser for your custom programming language:
 
 2. Place your custom language source code in a file named "input.txt" in the project directory.
 
-3. Compile the lexer and parser:
+3. Commands to compiler and run:
 
    ```bash
-   lex lex.l
-   yacc -d parser.y
-   gcc lex.yy.c y.tab.c -o custom_parser -ll
+    lex lexAnalyzer.l && yacc parser.y -d
    ```
 
 4. Run the lexer and parser:
 
    ```bash
-   ./custom_parser
+   gcc y.tab.c && ./a.out
    ```
 
 5. The parser will process the input code, tokenize it, build a parse tree, and perform semantic analysis. If any syntax errors are encountered, error messages will be displayed.

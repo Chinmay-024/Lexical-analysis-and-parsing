@@ -3,9 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
 int yyerror(char *s);
-
 #include "y.tab.h"
 #include "lex.yy.c"
 %}
